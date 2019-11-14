@@ -453,7 +453,7 @@ h6 {
   left: -260px;
   width: 260px;
   padding-top: 18px;
-  background: rgba(40, 38, 70, 0.8);
+  background: #272727cc;
   transition: 0.4s;
 }
 
@@ -474,7 +474,7 @@ h6 {
 .mobile-nav a:hover,
 .mobile-nav .active > a,
 .mobile-nav li:hover > a {
-  color: #8dc2fa;
+  color: #cc1537;
   text-decoration: none;
 }
 
@@ -520,7 +520,7 @@ h6 {
 
 .mobile-nav-toggle i {
   margin: 18px 18px 0 0;
-  color: #065e77;
+  color: #571220;
 }
 
 .mobile-nav-overly {
@@ -530,7 +530,7 @@ h6 {
   top: 0;
   left: 0;
   position: fixed;
-  background: rgba(40, 38, 70, 0.8);
+  background: #272727cc;
   overflow: hidden;
   display: none;
 }
@@ -1315,8 +1315,17 @@ h6 {
 }
 
 @media (max-width: 767px) {
+  #header .logo img {
+    position: relative;
+    top: 0;
+    left: 15px;
+    padding: 0;
+    max-height: 45px;
+    transition: all 0.5s;
+  }
+
   #intro {
-    height: auto;
+    height: 100vh;
     padding: 80px 0 60px 0;
   }
 
@@ -1330,16 +1339,41 @@ h6 {
 
   #intro .intro-info {
     text-align: center;
-    padding-top: 40px;
+    padding: 80px 40px 0 40px;
   }
 
   #intro .intro-info h2 {
+    padding-top: 20px;
     font-size: 34px;
     margin-bottom: 30px;
   }
 
+  #intro .intro-info .btn-get-started,
+  #intro .intro-info .btn-contact {
+    width: 100%;
+    margin: 20px 0 0 0;
+  }
+
   .section-header p {
     width: 100%;
+  }
+
+  #about .about-content {
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  #about .about-content h2 {
+    margin-top: 40px;
+    font-size: 28px;
+  }
+
+  #service-details .service-details-header {
+    text-align: center;
+  }
+
+  #service-details .service-details-header p {
+    text-align: center;
   }
 
   #testimonials .testimonial-item {
