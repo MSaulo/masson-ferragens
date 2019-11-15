@@ -1380,6 +1380,10 @@ h6 {
     max-width: 255px;
     margin: 0 auto;
   }
+
+  #contact .email-item {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 574px) {
