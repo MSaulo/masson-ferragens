@@ -1376,19 +1376,9 @@ h6 {
     text-align: center;
   }
 
-  #testimonials .testimonial-item {
-    text-align: center;
-  }
-
-  #testimonials .testimonial-item .testimonial-img {
-    float: none;
-    margin: auto;
-  }
-
-  #testimonials .testimonial-item h3,
-  #testimonials .testimonial-item h4,
-  #testimonials .testimonial-item p {
-    margin-left: 0;
+  #portfolio .portfolio-container {
+    max-width: 255px;
+    margin: 0 auto;
   }
 }
 
