@@ -169,7 +169,7 @@
         <div class="row">
           <div class="col-lg-9 text-center text-lg-left">
             <h3 class="cta-title">Gostou de nós?</h3>
-            <p class="cta-text">Nós da Masson Ferragens agradecemos o seu interrese, caso esteja precisando de um orçamento,
+            <p class="cta-text">Nós da Masson Ferragens agradecemos o seu interrese. Caso esteja precisando de um orçamento,
               envie-nos um e-mail com o projeto e responderemos em breve.</p>
           </div>
           <div class="col-lg-3 cta-btn-container text-center">
@@ -295,7 +295,7 @@
             <div class="portfolio-wrap">
               <img src="img/portfolio/cc-002.jpg" class="img-fluid">
               <div class="portfolio-info">
-                <h4>Coluna POP</h4>
+                <h4>Coluna / Viga</h4>
                 <p>
                   Esse produto possui total garantia de qualidade, pois é feita com o vergalhão de aço CA-50 e 
                   estribos de aço CA-60, unidos por solda ponto. É fornecida nos comprimentos de 6m e 7m com 
@@ -313,7 +313,7 @@
                 <p>
                   A Treliça é fabricada com aço CA-60 nervurado, que permite melhor aderência ao concreto.
                   Possui alta capacidade para vencer grandes vãos e suportar cargas elevadas com toda a segurança. Você 
-                  encontra a Treliça nos comprimentos de 8 m, 10 m e 12 m.
+                  encontra a Treliça nos comprimentos de 6 m, 8 m, 10 m e 12 m.
                 </p>
               </div>
             </div>
@@ -486,9 +486,8 @@
               <div class="portfolio-info">
                 <h4>Barra Redonda Trefilada</h4>
                 <p>
-                  ​​​​A Barra Redonda Trefilada é fornecida em uma ampla faixa de bitolas com excelentes pagamentos.
-                  Utilizada em diversas aplicações como implementos agrícolas, autopeças, implementos rodoviários
-                  máquinas e equipamentos entre outras.
+                  ​​​​A Barra Redonda Trefilada é fornecida em uma ampla faixa de bitolas. Utilizada em diversas aplicações
+                  como implementos agrícolas, autopeças, implementos rodoviários máquinas e equipamentos entre outras.
                 </p>
               </div>
             </div>
@@ -552,8 +551,9 @@
               <div class="portfolio-info">
                 <h4>Eletrodo</h4>
                 <p>
-                  As características especiais de soldagem e a alta qualidade do metal de solda depositado trazem a garantia
-                  de uma solda com maior rendimento.
+                  Versátil, pode ser aplicado nas mais diversas espessuras de chapas, podendo ser amplamente utilizado na
+                  indústria de implementos agrícolas, nas indústrias automobilísticas (montadoras e setor de autopeças),
+                  implementos rodoviários (carrocerias), caldeirarias e em construções mecânicas.
                 </p>
               </div>
             </div>
@@ -565,9 +565,8 @@
               <div class="portfolio-info">
                 <h4>Arame para Solda</h4>
                 <p>
-                  Versátil, pode ser aplicado nas mais diversas espessuras de chapas, podendo ser amplamente utilizado na
-                  indústria de implementos agrícolas, nas indústrias automobilísticas (montadoras e setor de autopeças),
-                  implementos rodoviários (carrocerias), caldeirarias e em construções mecânicas.
+                  As características especiais de soldagem e a alta qualidade do metal de solda depositado trazem a garantia
+                  de uma solda com maior rendimento.
                 </p>
               </div>
             </div>
@@ -631,7 +630,7 @@
               <div class="portfolio-info">
                 <h4>Grampo</h4>
                 <p>
-                  O grampo da possui excelente aderência à madeira e maior fixação ao mourão, conferindo alta
+                  O grampo possui excelente aderência à madeira e maior fixação ao mourão, conferindo alta
                   resistência e durabilidade à cerca, sendo ideal para terrenos planos.
                 </p>
               </div>
@@ -684,10 +683,10 @@
             <h4>Contato</h4>
 
             <div class="contact-item">
-              <i class="ion-ios-telephone-outline"></i> <a href="tel:16 3286-5944">016 3286-5944</a>
+              <i class="ion-ios-telephone-outline"></i> <a href="tel:016 3286-5944">016 3286-5944</a>
             </div>
             <div class="contact-item">
-              <i class="ion-iphone"></i> <a href="tel:16 9 9145-9008">016 9 9145-9008</a>
+              <i class="ion-iphone"></i> <a href="tel:016 9 9145-9008">016 9 9145-9008</a>
             </div>
             <div class="email-item">
               <i class="ion-ios-email-outline"></i> <a href="mailto:atendimento@massonferragens.com.br">atendimento@massonferragens.com.br</a>
@@ -701,14 +700,11 @@
               </div>
             </div>
             
-            
-
             <div class="social-links">
               <a href="https://wa.me/5516991459008" target="_blank" class="whats-app"><i class="fa fa-whatsapp"></i></a>
               <a href="https://pt-br.facebook.com/massonferragens" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
               <a href="https://www.instagram.com/massonferragens/" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a>
             </div>
-
             
           </div>
         </div>
@@ -717,7 +713,11 @@
           <div class="form">
             
             <h4 class="mb-3">Envie-nos uma menssagem</h4>
-            <form action="" method="post" role="form" class="contactForm">
+            <form role="form" class="contactForm">
+              
+              <div id="sendmessage">Menssagem enviada com sucesso. Entraremos em contato em breve!</div>
+              <div id="errormessage">Não foi possível enviar sua messagem, tente novamente...</div>
+
               <div class="form-group">
                 <input type="text" name="name" class="form-control" id="name" placeholder="Nome" data-rule="minlen:4" data-msg="É necessário no mínimo 4 letras" />
                 <div class="validation"></div>
@@ -734,9 +734,6 @@
                 <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Por favor, escreva sua menssagem aqui..." placeholder="Menssagem"></textarea>
                 <div class="validation"></div>
               </div>
-
-              <div id="sendmessage">Menssagem enviada com sucesso. Obrigado!</div>
-              <div id="errormessage"></div>
 
               <div class="text-center"><button type="submit" title="Send Message">Enviar Menssagem</button></div>
             </form>
@@ -787,7 +784,7 @@
   <script src="lib/isotope/isotope.pkgd.min.js"></script>
   <script src="lib/lightbox/js/lightbox.min.js"></script>
   <!-- Contact Form JavaScript File -->
-  <script src="contactform/contactform.js"></script>
+  <script src="js/contact-form.js"></script>
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>

@@ -249,15 +249,15 @@ h6 {
   position: relative;
   top: -25px;
   padding: 0;
-  max-height: 65px;
+  max-height: 75px;
   transition: all 0.5s;
 }
 
 #header.header-scrolled .logo img,
 #header.header-pages .logo img {
-  top: 0;
-  max-height: 30px;
-  margin: 5px 0;
+  top: -3px;
+  max-height: 45px;
+  margin: 0;
 }
 
 .main-pages {
@@ -1126,8 +1126,8 @@ h6 {
 }
 
 #contact .form #sendmessage {
-  color: #fff;
-  background: #cc1537;
+  color: #FFF;
+  background: #329c4a;
   display: none;
   text-align: center;
   padding: 15px;
@@ -1136,23 +1136,21 @@ h6 {
 }
 
 #contact .form #errormessage {
-  color: #fff;
+  color: #FFF;
   display: none;
-  background: red;
+  background: #F23A3A;
   text-align: center;
   padding: 15px;
   font-weight: 600;
   margin-bottom: 15px;
 }
 
-#contact .form #sendmessage.show,
-#contact .form #errormessage.show,
 #contact .form .show {
   display: block;
 }
 
 #contact .form .validation {
-  color: red;
+  color: #F23A3A;
   display: none;
   margin: 0 0 20px;
   font-weight: 400;
@@ -1315,6 +1313,14 @@ h6 {
 }
 
 @media (max-width: 767px) {
+
+  #header.header-scrolled .logo img,
+  #header.header-pages .logo img {
+    top: 0;
+    max-height: 35px;
+    margin: 4px 0;
+  }
+
   #header .logo img {
     position: relative;
     top: 0;
