@@ -126,7 +126,7 @@ jQuery(document).ready(function($) {
 
       request.done(function(data) {
         $("#errormessage").hide();
-        $("#sendmessage").finish().slideDown(600).delay(4500)
+        $("#sendmessage").finish().slideDown(600).delay(4500).slideUp(600);
         $(".contactForm")
           .find("input, textarea")
           .val("");
@@ -134,7 +134,7 @@ jQuery(document).ready(function($) {
 
       request.fail(function (jqXHR, textStatus, errorThrown) {
         $("#sendmessage").hide();
-        $("#errormessage").slideDown(600).delay(4500)
+        $("#errormessage").slideDown(600).delay(4500).slideUp(600);
       });
 
       request.always(function () {
