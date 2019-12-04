@@ -125,16 +125,16 @@ jQuery(document).ready(function($) {
       });
 
       request.done(function(data) {
-        $("#sendmessage").finish().slideDown(600).delay(4500).slideUp(600);
         $("#errormessage").hide();
+        $("#sendmessage").finish().slideDown(600).delay(4500)
         $(".contactForm")
           .find("input, textarea")
           .val("");
       });
 
-      request.fail(function (jqXHR, textStatus, errorThrown){
-        $("#errormessage").slideDown(600).delay(4500).slideUp(600);
+      request.fail(function (jqXHR, textStatus, errorThrown) {
         $("#sendmessage").hide();
+        $("#errormessage").slideDown(600).delay(4500)
       });
 
       request.always(function () {
