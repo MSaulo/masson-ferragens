@@ -332,6 +332,61 @@ h6 {
   border: 2px solid #cc1537;
 }
 
+#intro .social-links {
+  margin: 35px auto 0 auto;
+  display: none;
+}
+
+#intro .social-links a {
+  display: inline-block; 
+  width: 45px;
+  height: 45px;
+  padding: 6px 10px;
+  color: #FFF;
+  border: 2px solid #FFF;
+  border-radius: 50%;
+  box-shadow: 0 0 3px #00000060;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#intro .social-links a i {
+  font-size: 24px;
+}
+
+#intro .social-links a:hover {
+  box-shadow: 0 0 8px #000000BB;
+}
+
+#intro .social-links .facebook {
+  background: #3b5998;
+}
+
+#intro .social-links .facebook i {
+  position: relative;
+  top: 1px;
+}
+
+#intro .social-links .instagram {
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+}
+
+#intro .social-links .instagram i {
+  position: relative;
+  top: -1px;
+}
+
+#intro .social-links .whats-app {
+  background: #25d366;
+}
+
+#intro .social-links .whats-app i {
+  position: relative;
+  top: -1px;
+}
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -1275,6 +1330,11 @@ h6 {
     display: none;
   }
 
+  #header .logo img {
+    top: 0;
+    max-height: 55px;
+  }
+  
   #header {
     height: 70px;
     padding: 15px 0;
@@ -1283,6 +1343,14 @@ h6 {
   #header .logo h1 {
     font-size: 28px;
     padding: 8px 0;
+  }
+
+  #intro .intro-info {
+    text-align: center;
+  }
+
+  #intro .social-links {
+    display: block;
   }
 
   #why-us .why-us-content {
