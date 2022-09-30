@@ -321,7 +321,7 @@ h6 {
   padding: 10px 32px;
   border-radius: 4px;
   transition: 0.5s;
-  margin: 10px;
+  margin: 10px 0;
   border: 2px solid #cc1537;
   color: #cc1537;
 }
